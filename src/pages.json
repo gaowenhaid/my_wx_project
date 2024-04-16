@@ -1,15 +1,176 @@
 {
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
+			"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+		}
+	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
+						"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/functionList/index",
+						"style": {
+				"navigationBarTitleText": "功能"
+			}
+		},
+		{
+			"path": "pages/personal/index",
+						"style": {
+				"navigationBarTitleText": "我的"
 			}
 		}
-	],
+	],	
+	
+  "subPackages": [
+    {
+      "root": "pageA",
+      "pages": [
+        {
+          "path": "editPersonal/editPersonal",
+					"style": {
+						"navigationBarTitleText": "个人中心"
+					}
+        },
+				{
+					"path": "functionItem/textToVoice",
+					"style": {
+						"navigationBarTitleText": "文字转语音"
+					}
+				},
+				{
+					"path": "functionItem/almanac",
+					"style": {
+						"navigationBarTitleText": "黄历"
+					}
+				},
+				{
+					"path": "functionItem/readWorld",
+					"style": {
+						"navigationBarTitleText": "60秒读懂世界"
+					}
+				},
+				{
+					"path": "functionItem/hostory",
+					"style": {
+						"navigationBarTitleText": "历史上的今天"
+					}
+				},
+				{
+					"path": "functionItem/AWord",
+					"style": {
+						"navigationBarTitleText": "每日一言"
+					}
+				},
+				{
+					"path": "functionItem/webView",
+					"style": {
+						"navigationBarTitleText": "每日一言"
+					}
+				},
+				{
+					"path": "functionItem/dog",
+					"style": {
+						"navigationBarTitleText": "舔狗日记"
+					}
+				},
+				{
+					"path": "functionItem/joke",
+					"style": {
+						"navigationBarTitleText": "笑话大全"
+					}
+				},
+				{
+					"path": "functionItem/acrosticPoetry",
+					"style": {
+						"navigationBarTitleText": "藏头诗"
+					}
+				},
+				{
+					"path": "functionItem/singDuck",
+					"style": {
+						"navigationBarTitleText": "随机唱鸭"
+					}
+				},
+				{
+					"path": "functionItem/nameTest",
+					"style": {
+						"navigationBarTitleText": "姓名测试"
+					}
+				},
+				{
+					"path": "functionItem/randomPic",
+					"style": {
+						"navigationBarTitleText": "随机图片"
+					}
+				},
+				{
+					"path": "functionItem/changeLocal",
+					"style": {
+						"navigationBarTitleText": "经纬度转换"
+					}
+				},
+				{
+					"path": "functionItem/earthquakeQuery",
+					"style": {
+						"navigationBarTitleText": "地震查询"
+					}
+				},
+				{
+					"path": "functionItem/garbageSorting",
+					"style": {
+						"navigationBarTitleText": "垃圾分类"
+					}
+				},
+				{
+					"path": "functionItem/harassIpone",
+					"style": {
+						"navigationBarTitleText": "骚扰电话查询"
+					}
+				},
+				{
+					"path": "functionItem/oneiromancy",
+					"style": {
+						"navigationBarTitleText": "oneiromancy"
+					}
+				}
+      ]
+    }],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"spacing": "3px",
+		"list": [
+			{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/image/shouye.png",
+			"selectedIconPath": "static/image/shouyeed.png",
+			"text": "首页"
+		},
+		{
+			"pagePath": "pages/functionList/index",
+			"iconPath": "static/image/caidan.png",
+			"selectedIconPath": "static/image/caidaned.png",
+			"text": "功能"
+		},
+		{
+			"pagePath": "pages/personal/index",
+			"iconPath": "static/image/wodexiao.png",
+			"selectedIconPath": "static/image/wodexiaoed.png",
+			"text": "我的"
+		}
+	]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "快应用",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	}
